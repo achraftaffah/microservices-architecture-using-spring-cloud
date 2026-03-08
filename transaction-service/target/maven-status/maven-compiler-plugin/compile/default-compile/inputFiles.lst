@@ -1,0 +1,10 @@
+/home/achraf-taffah/Documents/projects/micrservices-demo/transaction-service/src/main/java/com/ajincodew/transactionservice/client/AccountClient.java
+/home/achraf-taffah/Documents/projects/micrservices-demo/transaction-service/src/main/java/com/ajincodew/transactionservice/config/JwtAuthenticationFilter.java
+/home/achraf-taffah/Documents/projects/micrservices-demo/transaction-service/src/main/java/com/ajincodew/transactionservice/dto/TransactionRequest.java
+/home/achraf-taffah/Documents/projects/micrservices-demo/transaction-service/src/main/java/com/ajincodew/transactionservice/repository/TransactionRepository.java
+/home/achraf-taffah/Documents/projects/micrservices-demo/transaction-service/src/main/java/com/ajincodew/transactionservice/config/JwtUtil.java
+/home/achraf-taffah/Documents/projects/micrservices-demo/transaction-service/src/main/java/com/ajincodew/transactionservice/TransactionServiceApplication.java
+/home/achraf-taffah/Documents/projects/micrservices-demo/transaction-service/src/main/java/com/ajincodew/transactionservice/model/Transaction.java
+/home/achraf-taffah/Documents/projects/micrservices-demo/transaction-service/src/main/java/com/ajincodew/transactionservice/mapper/TransactionMapper.java
+/home/achraf-taffah/Documents/projects/micrservices-demo/transaction-service/src/main/java/com/ajincodew/transactionservice/controller/TransactionController.java
+/home/achraf-taffah/Documents/projects/micrservices-demo/transaction-service/src/main/java/com/ajincodew/transactionservice/config/SecurityConfig.java
