@@ -1,6 +1,15 @@
 spring:
   application:
     name: config-service
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/achraftaffah/config-repo
+          default-label: main
+          clone-on-start: true
+
 server:
   port: 8888
 
@@ -10,13 +19,6 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
     register-with-eureka: true
     fetch-registry: true
-
-spring:
-  cloud:
-    config:
-      server:
-        native:
-          search-locations: classpath:/config
 
 management:
   endpoints:

@@ -61,8 +61,9 @@ public class JwtUtil {
     }
 
     private Claims getClaims(String token) {
-        return Jwts.parser()
-                .setSigningKey(getSigningKey())
+        SecretKey key = getSigningKey(); // returns javax.crypto.SecretKey
+        return Jwts.parserBuilder()
+                .verifyWith(key)     // replaces deprecated setSigningKey
                 .build()
                 .parseClaimsJws(token)
                 .getBody();
