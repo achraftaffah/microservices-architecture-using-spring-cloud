@@ -36,10 +36,6 @@ spring:
           filters:
             - RewritePath=/transactions/(?<segment>.*), /api/v1/transactions/${segment}
 
-jwt:
-
-
-
 eureka:
   client:
     register-with-eureka: true

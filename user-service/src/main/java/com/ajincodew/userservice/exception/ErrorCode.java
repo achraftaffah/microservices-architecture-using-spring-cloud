@@ -11,6 +11,32 @@ public enum ErrorCode {
     USER_NOT_FOUND("USER0002", "User not found"),
     USER_ALREADY_EXISTS("USER0003", "User already exists");
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     private final String code;
     private final String message;
 }

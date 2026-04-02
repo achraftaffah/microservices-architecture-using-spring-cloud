@@ -5,12 +5,11 @@ import com.ajincodew.userservice.exception.BusinessException;
 import com.ajincodew.userservice.service.AuthService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1/auth")
@@ -31,8 +30,15 @@ public class AuthController {
     }
 
     @PostMapping("/signup")
+//    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<ApiResponse> signup(@Valid @RequestBody SignupRequest request) {
         String token = authService.signup(request.username(), request.password());
         return ResponseEntity.ok(new AuthResponse(token));
+    }
+
+    @GetMapping("/data")
+    @PreAuthorize("hasRole('ADMIN')")
+    public String getdata(){
+        return "data";
     }
 }
